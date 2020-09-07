@@ -2,13 +2,15 @@
 
 By Curtis Clemmons.
 
+https://bsu-cs315.github.io/P1-Projectile-Launch/
+
 ## Instructions
 Try and knock the target into the groove!
-In order to change the strength in which the alien is launch use the up and down arrow keys.
+In order to change the strength in which the alien is launched use the up and down arrow keys.
 The up arrow key will increase the strength by 25 and the down arrow key will decrease the
 strength by 25. The default strength is set at 500. 
 In order to change the direction in which you fire the alien use the left and right arrow 
-keys. The left arrow key will cause the alien to launched straighter in the air where as the
+keys. The left arrow key will cause the alien to launch straighter in the air where as the
 right arrow key will launch the alien further to the right. The Default angle is to 45 degrees.
 
 ## Project Report
