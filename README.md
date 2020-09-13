@@ -44,5 +44,5 @@ Self-assessment:
 All images used are from the [Physics Assets Pack](https://www.kenney.nl/assets/physics-assets)
 License: [CCO 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/)
 
-The audio used is from [feesound](https://freesound.org/people/Robinhood76/sounds/329683/)
+The audio used is from [freesound](https://freesound.org/people/Robinhood76/sounds/329683/)
 License: [Attribution Noncommercial License](http://creativecommons.org/licenses/by-nc/3.0/)
