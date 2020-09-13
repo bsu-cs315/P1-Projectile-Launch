@@ -41,7 +41,7 @@ Self-assessment:
  - [x] A-2: There is a visual indicator showing the angle at which the projectile will fire.
  - [x] A-3: The projectile's hitting the target is recognized and logged to the console or otherwise indicated. 
  
- In it's current state the project deserves and A.
+ In it's current state the project deserves an A.
 
 ## Third-Party Assets
 All images used are from the Physics Assets Pack from Kenney.nl. 
