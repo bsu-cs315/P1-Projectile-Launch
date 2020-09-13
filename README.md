@@ -41,7 +41,8 @@ Self-assessment:
 - [ ] ⭐ A <abbr title="Heads-Up Display">HUD</abbr> shows the current game state such as the score and number of projectiles remaining.
 
 ## Third-Party Assets
-All images used are from the Physics Assets Pack from Kenney.nl. 
-https://www.kenney.nl/assets/physics-assets
+All images used are from the [Physics Assets Pack](https://www.kenney.nl/assets/physics-assets)
 License: [CCO 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/)
 
+The audio used is from [feesound](https://freesound.org/people/Robinhood76/sounds/329683/)
+License: [Attribution Noncommercial License](http://creativecommons.org/licenses/by-nc/3.0/)
