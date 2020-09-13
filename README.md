@@ -9,7 +9,7 @@ Try and knock the target into the groove!
 In order to change the strength in which the alien is launched use the up and down arrow keys.
 The up arrow key will increase the strength by 25 and the down arrow key will decrease the
 strength by 25. The default strength is set at 500. The strength is indicated by the length of the arrow.
-In order to change the direction in which you fire the alien use the left and right arrow keys. The angle in which the alien will launch is indicated by the direction the line is pointing. 
+In order to change the direction in which you fire the alien use the left and right arrow keys. The angle in which the alien will launch is indicated by the direction the line is pointing. Press space to launch the alien.
 
 ## Project Report
 
