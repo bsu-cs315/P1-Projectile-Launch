@@ -33,7 +33,6 @@ func _process(delta):
 	if Input.is_action_just_pressed("decrease_strength"):
 		strength -= strength_change_rate
 	strength = clamp(strength, MIN_STRENGTH, MAX_STRENGTH)
-	print(strength)
 	
 func _draw():
 	if not _launched:
