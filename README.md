@@ -43,5 +43,5 @@ Self-assessment:
 ## Third-Party Assets
 All images used are from the Physics Assets Pack from Kenney.nl. 
 https://www.kenney.nl/assets/physics-assets
-License: CCO 1.0 Universal
+License: [CCO 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/)
 
