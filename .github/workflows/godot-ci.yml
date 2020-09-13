@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 # Workflow to publish Godot HTML5 games to GitHub Pages
 #
 # Make sure your project is configured for Web export
@@ -46,4 +44,4 @@ jobs:
           user_name: 'github-ci[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
           commit_message: 'Publish to gh-pages'
->>>>>>> 3f4fabc01bd2b8306951e1b1b57a88d99d9286f4
+
