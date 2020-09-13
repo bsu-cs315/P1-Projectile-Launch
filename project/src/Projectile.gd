@@ -12,6 +12,7 @@ func _process(_delta):
 			_angle -= PI / 16
 		if Input.is_action_just_pressed("RotateAngleRight"):
 			_angle += PI / 16
+		_angle = clamp(_angle, - PI /2, 0)
 		if Input.is_action_just_pressed("Launch"):
 			var direction = Vector2(1,0).rotated(_angle)
 			var velocity = direction * strength
