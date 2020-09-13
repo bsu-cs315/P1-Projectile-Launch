@@ -22,11 +22,16 @@ func _process(delta):
 	_angle = clamp(_angle, - PI /2, 0)
 	update()
 	
-	if Input.is_action_pressed("Launch"):
+	if Input.is_action_just_pressed("Launch"):
 		var direction = Vector2(1,0).rotated(_angle)
 		var velocity = direction * strength
+		var player = AudioStreamPlayer.new()
+		self.add_child(player)
+		player.stream = load("res://project/assets/launch_sound.wav")
 		apply_impulse(Vector2.ZERO, velocity)
+		player.play()
 		_launched = true
+		
 	
 	if Input.is_action_just_pressed("increase_strength"):
 		strength += strength_change_rate
