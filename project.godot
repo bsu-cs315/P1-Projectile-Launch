@@ -19,6 +19,10 @@ config/name="ProjectileLaunch"
 run/main_scene="res://project/src/Level.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+window/stretch/mode="viewport"
+
 [input]
 
 Launch={
