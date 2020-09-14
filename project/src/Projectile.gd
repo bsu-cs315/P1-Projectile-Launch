@@ -1,4 +1,5 @@
 extends RigidBody2D
+signal projectile_launched
 
 export var strength := 500.0
 export var rotation_speed := 1.0
@@ -21,8 +22,23 @@ func _process(delta):
 		_angle += rotation_speed * delta
 	_angle = clamp(_angle, - PI /2, 0)
 	update()
-	
 	if Input.is_action_just_pressed("Launch"):
+		launch()
+	
+	if Input.is_action_just_pressed("increase_strength"):
+		strength += strength_change_rate
+	if Input.is_action_just_pressed("decrease_strength"):
+		strength -= strength_change_rate
+	strength = clamp(strength, MIN_STRENGTH, MAX_STRENGTH)
+
+func launch():
+	var all_projectiles_asleep := true
+	var projectiles = get_tree().get_nodes_in_group("projectiles")
+	for node in projectiles:
+		var projectile = node as RigidBody2D
+		if !projectile.sleeping:
+			all_projectiles_asleep = false
+	if all_projectiles_asleep:
 		var direction = Vector2(1,0).rotated(_angle)
 		var velocity = direction * strength
 		var player = AudioStreamPlayer.new()
@@ -30,14 +46,9 @@ func _process(delta):
 		player.stream = load("res://project/assets/launch_sound.wav")
 		apply_impulse(Vector2.ZERO, velocity)
 		player.play()
+		emit_signal("projectile_launched")
 		_launched = true
 		
-	
-	if Input.is_action_just_pressed("increase_strength"):
-		strength += strength_change_rate
-	if Input.is_action_just_pressed("decrease_strength"):
-		strength -= strength_change_rate
-	strength = clamp(strength, MIN_STRENGTH, MAX_STRENGTH)
 	
 func _draw():
 	if not _launched:

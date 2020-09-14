@@ -12,16 +12,16 @@ strength by 25. The default strength is set at 500. The strength is indicated by
 In order to change the direction in which you fire the alien use the left and right arrow keys. The angle in which the alien will launch is indicated by the direction the line is pointing. Press space to launch the alien.
 
 ## Project Report
-Iteration 1 Reflection:
+###Iteration 1 Reflection: \newline
 This iteration was fairly difficult, there were a few areas that I struggled to
 figure out. In the end I wasn't able to get figure out how to display the angle in which 
-the projectile would be launched on my own. I was abke to figure it out following along with Doctor G's tutorial. As of now this project showed me that I need to mess around with the godot engine and learn more about.
+the projectile would be launched on my own. I was able to figure it out following along with Doctor G's tutorial. As of now this iteration showed me that I need to mess around with the godot engine and learn more about and probably allot or more time to work on the iteration.
 
-Iteration 2 Reflection: 
+###Iteration 2 Reflection: 
 
 
 
-Self-assessment:
+###Self-assessment:
 - [ ] D-1: The repository link is submitted to Canvas before the project deadline.
 - [ ] D-2: The repository contains a <code>README.md</code> file in its top-level directory.
 - [ ] D-3: The project content is eligible for an <a href="https://www.esrb.org/ratings-guide/">ESRB Rating</a> of M or less.
