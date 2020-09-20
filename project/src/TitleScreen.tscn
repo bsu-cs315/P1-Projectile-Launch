@@ -1,0 +1,112 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://project/assets/elementStone027.png" type="Texture" id=1]
+[ext_resource path="res://project/assets/elementExplosive045.png" type="Texture" id=2]
+[ext_resource path="res://project/assets/alienBlue_round.png" type="Texture" id=3]
+
+[node name="TitleScreen" type="CanvasLayer"]
+
+[node name="PlayButton" type="Button" parent="."]
+anchor_left = 0.784
+anchor_top = 0.085
+anchor_right = 0.784
+anchor_bottom = 0.085
+margin_left = -196.816
+margin_top = 380.0
+margin_right = -78.816
+margin_bottom = 439.0
+text = "PLAY"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextEdit" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -161.245
+margin_top = 138.475
+margin_right = 20.7552
+margin_bottom = 211.475
+text = "Projectile Launch"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -275.947
+margin_top = 312.954
+margin_right = -205.947
+margin_bottom = 382.954
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+margin_left = 448.66
+margin_top = 188.326
+margin_right = 518.66
+margin_bottom = 258.326
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+margin_left = 443.121
+margin_top = 260.333
+margin_right = 513.121
+margin_bottom = 330.333
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect4" type="TextureRect" parent="."]
+margin_left = 589.904
+margin_top = 337.879
+margin_right = 659.904
+margin_bottom = 407.879
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect5" type="TextureRect" parent="."]
+margin_left = 515.128
+margin_top = 337.879
+margin_right = 585.128
+margin_bottom = 407.879
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect6" type="TextureRect" parent="."]
+margin_left = 515.128
+margin_top = 263.103
+margin_right = 585.128
+margin_bottom = 333.103
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect7" type="TextureRect" parent="."]
+margin_left = 670.22
+margin_top = 337.88
+margin_right = 740.22
+margin_bottom = 407.88
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect8" type="TextureRect" parent="."]
+margin_left = 670.0
+margin_top = 260.454
+margin_right = 740.0
+margin_bottom = 330.454
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
