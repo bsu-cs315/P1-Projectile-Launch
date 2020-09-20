@@ -1,10 +1,5 @@
 extends CanvasLayer
 
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
 func set_projectiles_remaining(projectiles_left):
 	$ProjectilesLeft.text = "Projectiles Remaining: " + str(projectiles_left)
 	

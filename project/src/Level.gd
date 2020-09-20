@@ -18,6 +18,7 @@ func launched():
 		projectiles_remaining -= 1
 		$HUD.set_projectiles_remaining(projectiles_remaining)
 
+
 func _on_Area2D_body_entered(body):
 	if "Target" in body.name:
 		$HUD.update_score()

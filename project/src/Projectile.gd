@@ -5,7 +5,7 @@ export var strength := 500.0
 export var rotation_speed := 1.0
 export var strength_change_rate := 25.0
 
-var _launched := false
+var _in_the_air := false
 var _angle := 0.0
 
 const MIN_STRENGTH := 300.0
@@ -14,7 +14,7 @@ const MIN_ARROW_LENGTH := 50.0
 const MAX_ARROW_LENGTH := 150.0
 
 func _process(delta):
-	if _launched:
+	if _in_the_air:
 		return
 	if Input.is_action_pressed("rotate_angle_left"):
 		_angle -= rotation_speed * delta
@@ -47,10 +47,10 @@ func launch():
 		apply_impulse(Vector2.ZERO, velocity)
 		player.play()
 		emit_signal("projectile_launched")
-		_launched = true
+		_in_the_air = true
 		
 	
 func _draw():
-	if not _launched:
+	if not _in_the_air:
 		var arrow_length = range_lerp(strength, MIN_STRENGTH, MAX_STRENGTH, MIN_ARROW_LENGTH, MAX_ARROW_LENGTH)
 		draw_line(Vector2.ZERO, Vector2(arrow_length, 0).rotated(_angle), Color.aliceblue, 5)
