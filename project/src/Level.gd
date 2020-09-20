@@ -1,4 +1,5 @@
 extends Node2D
+
 var projectiles_remaining
 
 func _ready():
@@ -17,7 +18,6 @@ func launched():
 		add_projectile()
 		projectiles_remaining -= 1
 		$HUD.set_projectiles_remaining(projectiles_remaining)
-
 
 func _on_Area2D_body_entered(body):
 	if "Target" in body.name:

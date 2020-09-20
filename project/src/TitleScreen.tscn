@@ -100,4 +100,14 @@ Launch"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Instruction" type="Label" parent="."]
+margin_left = 550.15
+margin_top = 187.974
+margin_right = 709.15
+margin_bottom = 209.974
+text = "Press play to get started!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="pressed" from="PlayButton" to="." method="_on_PlayButton_pressed"]
