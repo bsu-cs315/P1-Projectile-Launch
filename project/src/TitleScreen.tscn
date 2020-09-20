@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://project/assets/elementStone027.png" type="Texture" id=1]
 [ext_resource path="res://project/assets/elementExplosive045.png" type="Texture" id=2]
@@ -25,6 +25,10 @@ font_data = ExtResource( 5 )
 0/shape_one_way_margin = 0.0
 0/shapes = [  ]
 0/z_index = 0
+
+[sub_resource type="DynamicFont" id=3]
+size = 48
+font_data = ExtResource( 5 )
 
 [node name="TitleScreen" type="CanvasLayer"]
 script = ExtResource( 4 )
@@ -84,4 +88,16 @@ tile_set = SubResource( 2 )
 cell_size = Vector2( 70, 70 )
 format = 1
 tile_data = PoolIntArray( 262150, 0, 0, 262151, 0, 0, 262153, 0, 0, 327687, 0, 0, 327688, 0, 0, 327689, 0, 0 )
+
+[node name="Title" type="Label" parent="."]
+margin_left = 84.1995
+margin_top = 97.4941
+margin_right = 293.199
+margin_bottom = 190.494
+custom_fonts/font = SubResource( 3 )
+text = "Projectile
+Launch"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="pressed" from="PlayButton" to="." method="_on_PlayButton_pressed"]
