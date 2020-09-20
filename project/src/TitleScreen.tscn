@@ -83,7 +83,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TileMap" type="TileMap" parent="."]
+[node name="Floor" type="TileMap" parent="."]
 tile_set = SubResource( 2 )
 cell_size = Vector2( 70, 70 )
 format = 1

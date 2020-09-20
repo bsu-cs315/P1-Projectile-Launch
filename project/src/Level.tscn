@@ -42,7 +42,7 @@ position = Vector2( 492.393, 280.401 )
 scale = Vector2( 0.942644, 0.522515 )
 texture = ExtResource( 4 )
 
-[node name="TileMap" type="TileMap" parent="."]
+[node name="LevelBorder" type="TileMap" parent="."]
 tile_set = SubResource( 2 )
 cell_size = Vector2( 70, 70 )
 format = 1
