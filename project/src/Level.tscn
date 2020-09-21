@@ -83,7 +83,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="RichTextLabel" type="RichTextLabel" parent="YouWon"]
+[node name="EndMessege" type="RichTextLabel" parent="YouWon"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
