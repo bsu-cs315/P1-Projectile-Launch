@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://project/assets/elementStone027.png" type="Texture" id=1]
 [ext_resource path="res://project/src/Target.tscn" type="PackedScene" id=3]
@@ -34,6 +34,9 @@ points = PoolVector2Array( 70, 70, 0, 70, 0, 0, 70, 0 )
 
 [sub_resource type="RectangleShape2D" id=3]
 
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 419.528, 10 )
+
 [node name="Level" type="Node2D"]
 script = ExtResource( 5 )
 
@@ -54,9 +57,45 @@ gravity_scale = 0.75
 
 [node name="HUD" parent="." instance=ExtResource( 6 )]
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="TargetArea" type="Area2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 592.495, 262.417 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TargetArea"]
+position = Vector2( 594.069, 284.459 )
 shape = SubResource( 3 )
-[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+
+[node name="OutOfBounds" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="OutOfBounds"]
+position = Vector2( 489.758, 481.359 )
+shape = SubResource( 4 )
+
+[node name="YouWon" type="WindowDialog" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -54.0
+margin_top = -20.0
+margin_right = 54.0
+margin_bottom = 20.0
+window_title = "You Won!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="YouWon"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -100.0
+margin_top = -15.0
+margin_right = 100.0
+margin_bottom = 15.0
+text = "Press reset to replay
+Press back to return to title"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="body_entered" from="TargetArea" to="." method="_on_TargetArea_body_entered"]
+[connection signal="body_entered" from="OutOfBounds" to="." method="_on_OutOfBounds_body_entered"]
